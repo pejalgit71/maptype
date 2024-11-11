@@ -6,7 +6,7 @@ import numpy as np
 # Load the Natural Earth dataset (update the path to your downloaded file)
 @st.cache_data
 def load_data():
-    gdf = gpd.read_file("ne_110m_admin_0_countries/ne_110m_admin_0_countries.shp")
+    gdf = gpd.read_file("ne_110m_admin_0_countries.shp")
     
     # Check if 'pop_est' column exists; if not, create it with dummy data
     if 'pop_est' not in gdf.columns:
